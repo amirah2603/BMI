@@ -1,0 +1,29 @@
+.btn-group-vertical {
+    display: inline-flex;
+    flex-direction: column;
+    
+}
+
+.btn {
+    color: #ffffff;
+    background-color: #f9c230;
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 12px;
+    transition: .15s ease-in-out;
+    margin-left: 550px;
+    margin-bottom: 10px;
+    padding: 14px 40px;
+}
+
+.btn:hover {
+    background-color: #0069d9;
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(38,143,255,.5);
+}
+
+
+/*https://parrot-tutorial.com/run_code.php?snippet=howto_btn_group_vertical*/
