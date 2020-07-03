@@ -13,7 +13,7 @@
 				<div class="centered">
 					<img  class= "image" src="https://deenamik.com/wp-content/uploads/2018/11/tip-2-1.jpg" alt="Image">
   					<div class="advice-group-vertical">
-    					<input type=button onClick="location.href='home.php'" class="advice" value="HOME">
+    					<input type=button onClick="location.href='index.php'" class="advice" value="HOME">
 					</div>
 				</div>
 			</div>
