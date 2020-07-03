@@ -4,7 +4,7 @@ $(document).ready(function() {
    * call the data.php file to fetch the result from db table.
    */
   $.ajax({
-    url : "localhost/data.php",
+    url : "https:192.168.8.103/data.php",
     type : "GET",
     success : function(data) {
       console.log(data);
