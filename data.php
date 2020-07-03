@@ -8,10 +8,10 @@
 header('Content-Type: application/json');
 
 //database
-define('DB_HOST', 'ec2-34-197-188-147.compute-1.amazonaws.com');
-define('DB_USERNAME', 'xaiwgzulsgxtkb');
-define('DB_PASSWORD', 'fc7a410c7df6fb94b409aa0d78e3f2fb15440e42f75b694fbb2a966e448ad8d6');
-define('DB_NAME', 'danoh2mjnt7j0s');
+define('DB_HOST', 'localhost');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', '');
+define('DB_NAME', 'distance');
 
 //get connection
 $mysqli = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
@@ -21,7 +21,7 @@ if(!$mysqli){
 }
 
 //query to get data from the table
-$query = sprintf("SELECT user_id, user_bmi, created_at FROM bmi ORDER BY created_at");
+$query = sprintf("SELECT id, distance, created_at FROM bmi ORDER BY created_at");
 
 //execute query
 $result = $mysqli->query($query);
