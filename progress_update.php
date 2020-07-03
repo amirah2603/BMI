@@ -3,7 +3,7 @@
 <head>
 	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 	<meta content="utf-8" http-equiv="encoding">
-    <title>ChartJS - Line</title>
+    <title>Performance</title>
     <link href="css/default.css" rel="stylesheet">
     <style>
       .performance {
@@ -46,7 +46,7 @@
     <script src="js/line-db-php.js"></script>
 
   <div class="performance-group-vertical">
-    <input type=button onClick="location.href='home.html'" class="performance" value="HOME">
+    <input type=button onClick="location.href='home.php'" class="performance" value="HOME">
   </div>
     
 </body>
