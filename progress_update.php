@@ -46,7 +46,7 @@
     <script src="js/line-db-php.js"></script>
 
   <div class="performance-group-vertical">
-    <input type=button onClick="location.href='home.php'" class="performance" value="HOME">
+    <input type=button onClick="location.href='index.php'" class="performance" value="HOME">
   </div>
     
 </body>
