@@ -5,6 +5,7 @@
  */
 
 //setting header to json
+header("Access-Control-Allow-Origin: *");
 header('Content-Type: application/json');
 
 //database
