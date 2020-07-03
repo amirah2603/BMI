@@ -21,7 +21,7 @@ if(!$mysqli){
 }
 
 //query to get data from the table
-$query = sprintf("SELECT id, distance, created_at FROM bmi ORDER BY created_at");
+$query = sprintf("SELECT id, length, created_at FROM iot_project ORDER BY created_at");
 
 //execute query
 $result = $mysqli->query($query);
