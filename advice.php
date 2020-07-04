@@ -13,7 +13,7 @@
 				<div class="centered">
 					<img  class= "image" src="https://deenamik.com/wp-content/uploads/2018/11/tip-2-1.jpg" alt="Image">
   					<div class="advice-group-vertical">
-    					<input type=button onClick="location.href='index.php'" class="advice" value="HOME">
+    					<input type=button onClick="location.href='home.html'" class="advice" value="HOME">
 					</div>
 				</div>
 			</div>
@@ -31,7 +31,7 @@
 				$result = $result-> fetch_assoc();
 
 				// $BMI = $result["length"];
-				$BMI = 19;
+				$BMI = 30;
 				echo "<h4>Your BMI is ".$BMI;
 
 				if ($BMI < 18.5){
