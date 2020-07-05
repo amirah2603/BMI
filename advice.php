@@ -20,7 +20,7 @@
   		<div class="col my-col">
   			<div class="centered">
   				<?php
-				$conn = mysqli_connect("127.0.0.1", "root", "pQ1E5c4K2vRc", "tasks");
+				$conn = mysqli_connect("34.92.199.218", "root", "pQ1E5c4K2vRc", "tasks");
 				if ($conn-> connect_error) {
 					die("Connection failed:". $conn-> connect_error);
 				}
