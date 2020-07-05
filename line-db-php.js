@@ -4,7 +4,7 @@ $(document).ready(function() {
    * call the data.php file to fetch the result from db table.
    */
   $.ajax({
-    url : "https:192.168.8.103/data.php",
+    url : "http://34.92.199.218/line-db-php.js",
     type : "GET",
     success : function(data) {
       console.log(data);
@@ -21,7 +21,7 @@ $(document).ready(function() {
       var len = data.length;
 
       for (var i = 0; i < len; i++){
-        bmi.push(data[i].length);
+        bmi.push(data[i].user_bmi);
         date.push(data[i].created_at);
       }
 
