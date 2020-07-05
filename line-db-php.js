@@ -4,7 +4,7 @@ $(document).ready(function() {
    * call the data.php file to fetch the result from db table.
    */
   $.ajax({
-    url : "https://34.92.199.218/bmi.php",
+    url : "http://34.92.199.218/bmi.php",
     type : "GET",
     success : function(data) {
       console.log(data);
