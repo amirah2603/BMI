@@ -23,7 +23,7 @@
 				$url = "http://34.92.199.218/bmi.php";
     				$json = json_decode(file_get_contents($url), true);
 				$lastValue = end($json);
-				$BMI = $json[0]['user_bmi'];
+				$BMI = $lastValue['user_bmi'];
 // 				$BMI = 30;
 				echo "<h4>Your BMI is ".$BMI;
 
