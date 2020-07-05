@@ -20,17 +20,9 @@
   		<div class="col my-col">
   			<div class="centered">
   				<?php
-				$conn = mysqli_connect("127.0.0.1", "root", "pQ1E5c4K2vRc", "tasks");
-				if ($conn-> connect_error) {
-					die("Connection failed:". $conn-> connect_error);
-				}
-
-				$sql = "SELECT id, user_bmi from iot_project ORDER BY id DESC";
-				$result = $conn-> query($sql);
-
-				$result = $result-> fetch_assoc();
-
-				$BMI = $result["length"];
+				$url = "http://34.92.199.218/bmi.php";
+    				$json = json_decode(file_get_contents($url), true);
+				$BMI = $json[0]['user_bmi'];
 // 				$BMI = 30;
 				echo "<h4>Your BMI is ".$BMI;
 
@@ -95,7 +87,6 @@
 
 				echo "</h2>";
 
-				$conn-> close();
 				?>
   			</div>
 		
