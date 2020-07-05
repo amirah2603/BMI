@@ -20,18 +20,18 @@
   		<div class="col my-col">
   			<div class="centered">
   				<?php
-				$conn = mysqli_connect("localhost", "root", "", "distance");
+				$conn = mysqli_connect("127.0.0.1", "root", "pQ1E5c4K2vRc", "tasks");
 				if ($conn-> connect_error) {
 					die("Connection failed:". $conn-> connect_error);
 				}
 
-				$sql = "SELECT id, length from iot_project ORDER BY id DESC";
+				$sql = "SELECT id, user_bmi from iot_project ORDER BY id DESC";
 				$result = $conn-> query($sql);
 
 				$result = $result-> fetch_assoc();
 
-				// $BMI = $result["length"];
-				$BMI = 30;
+				$BMI = $result["length"];
+// 				$BMI = 30;
 				echo "<h4>Your BMI is ".$BMI;
 
 				if ($BMI < 18.5){
