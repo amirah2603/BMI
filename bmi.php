@@ -10,8 +10,8 @@ header('Content-Type: application/json');
 
 //database
 define('DB_HOST', '127.0.0.1');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', 'pQ1E5c4K2vRc');
+define('DB_USERNAME', 'amirah');
+define('DB_PASSWORD', 'bebek');
 define('DB_NAME', 'tasks');
 
 // get connection
