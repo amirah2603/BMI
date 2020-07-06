@@ -35,15 +35,15 @@ $query = sprintf("SELECT id, user_bmi, created_at FROM bmi ");
 
 //execute query
 $result = $mysqli->query($query);
-print json_encode($result);
+// print json_encode($result);
 // //loop through the returned data
-// $data = array();
-// foreach ($result as $row) {
-//   $data[] = $row;
-// }
+$data = array();
+foreach ($result as $row) {
+  $data[] = $row;
+}
 
 // //free memory associated with result
-// $result->close();
+$result->close();
 
 //close connection
 $mysqli->close();
