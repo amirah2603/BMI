@@ -8,7 +8,7 @@
 	<?php 
 		$user = $_GET['user'];
 	 ?>
-	<h1>Welcome Back, <?php $user ?>.</h1>
+	<h1>Welcome Back, <?php echo $user ?>.</h1>
 
 	<div class="btn-group-vertical">
     	<input type=button onClick="location.href='calculate.php?user=<?php echo user?>'" class="btn" value="CALCULATE BMI">
