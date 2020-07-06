@@ -5,21 +5,26 @@
  */
 
 //setting header to json
-// header("Access-Control-Allow-Origin: *");
-// header('Content-Type: application/json');
+header("Access-Control-Allow-Origin: *");
+header('Content-Type: application/json');
 
-// //database
-// define('DB_HOST', '127.0.0.1');
-// define('DB_USERNAME', 'root');
-// define('DB_PASSWORD', 'pQ1E5c4K2vRc');
-// define('DB_NAME', 'tasks');
+//database
+define('DB_HOST', '127.0.0.1');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', 'pQ1E5c4K2vRc');
+define('DB_NAME', 'tasks');
 
 // // get connection
-// $mysqli = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+$mysqli = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
-// if(!$mysqli){
-//   die("Connection failed: " . $mysqli->error);
-// }
+if(!$mysqli){
+  die("Connection failed: " . $mysqli->error);
+}
+else{
+  echo "Database is connected";
+}
+
+echo "Does not enter database";
 
 
 // $mysqli = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
@@ -82,11 +87,11 @@
 // //now print the data
 // echo json_encode($data);
 // echo "json has been printed"
-$myObj->name = "John";
-$myObj->age = 30;
-$myObj->city = "New York";
-$myJSON = json_encode($myObj);
+// $myObj->name = "John";
+// $myObj->age = 30;
+// $myObj->city = "New York";
+// $myJSON = json_encode($myObj);
 
-echo $myJSON;
+// echo $myJSON;
 
 ?>
