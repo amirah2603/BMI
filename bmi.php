@@ -42,7 +42,7 @@ if(!$mysqli){
 //   $data[] = $row;
 // }
 // echo "data obtained";
-if ($result = mysqli_query($mysqli, "SELECT * FROM bmi")) {
+if ($result = mysqli_query($mysqli, "SELECT id, user_bmi FROM bmi")) {
   echo "Returned rows are: " . mysqli_num_rows($result);
   // Free result set
   mysqli_free_result($result);
