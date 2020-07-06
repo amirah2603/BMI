@@ -6,7 +6,9 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-
+	<?php 
+		$user = $_GET['user'];
+	 ?>
  	<div class="container my-container">
 		<div class="row my-row">
 			<div class="col my-col">
@@ -26,6 +28,7 @@
 				$BMI = $lastValue['user_bmi'];
 // 				$BMI = 30;
 				echo "<h4>Your BMI is ".$BMI;
+				echo "You are doing great $user";
 
 				if ($BMI < 18.5){
 					echo ". You are Underweight.";
