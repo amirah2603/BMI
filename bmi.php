@@ -41,7 +41,7 @@ $data = array();
 foreach ($result as $row) {
   $data[] = $row;
 }
-
+echo "data obtained";
 // //free memory associated with result
 $result->close();
 
@@ -49,6 +49,7 @@ $result->close();
 $mysqli->close();
 
 //now print the data
-print json_encode($data);
+// print json_encode($data);
+echo json_encode($data);
 
 ?>
