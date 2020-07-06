@@ -9,7 +9,7 @@ header("Access-Control-Allow-Origin: *");
 header('Content-Type: application/json');
 
 //database
-define('DB_HOST', '34.92.199.218');
+define('DB_HOST', '127.0.0.1');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', 'pQ1E5c4K2vRc');
 define('DB_NAME', 'tasks');
@@ -31,7 +31,7 @@ if(!$mysqli){
 // echo "Database connected";
 
 //query to get data from the table
-$query = sprintf("SELECT id, user_bmi, created_at FROM bmi ");
+// $query = sprintf("SELECT id, user_bmi, created_at FROM bmi ");
 
 //execute query
 // $result = $mysqli->query($query);
@@ -47,15 +47,16 @@ if ($result = mysqli_query($mysqli, "SELECT * FROM bmi")) {
   // Free result set
   mysqli_free_result($result);
 }
+echo json_encode($result);
 
 // //free memory associated with result
-// $result->close();
+$result->close();
 
 // //close connection
-// $mysqli->close();
+$mysqli->close();
 
 //now print the data
 // print json_encode($data);
-echo json_encode($result);
+
 
 ?>
