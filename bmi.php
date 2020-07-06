@@ -32,31 +32,31 @@ else{
 // }
 
 // //query to get data from the table
-$query = sprintf("SELECT id, user_bmi, created_at FROM bmi ");
+// $query = sprintf("SELECT id, user_bmi, created_at FROM bmi ");
 
 // //execute query
-$result = $mysqli->query($query);
+// $result = $mysqli->query($query);
 
 // //loop through the returned data
 // $data = array();
 // foreach ($result as $row) {
 //   $data[] = $row;
 // }
-echo $result;
+// echo $result;
 // //free memory associated with result
-$result->close();
+// $result->close();
 
 // //close connection
-$mysqli->close();
+// $mysqli->close();
 
 // //now print the data
 // print json_encode($data);
 //query to get data from the table
-// $query = sprintf("SELECT id, length, created_at FROM iot_project ORDER BY created_at");
-// if ($result = mysqli_query($mysqli, "SELECT * FROM bmi")) {
-//   echo "Returned rows are: " . mysqli_num_rows($result);
-//   // Free result set
-//   mysqli_free_result($result);
+// $query = sprintf("SELECT id, user_bmi, created_at FROM bmi");
+if ($result = mysqli_query($mysqli, "SELECT * FROM bmi")) {
+  echo "Returned rows are: " . mysqli_num_rows($result);
+  // Free result set
+  mysqli_free_result($result);
 // }
 
 // print json_encode($result);
