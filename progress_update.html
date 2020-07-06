@@ -38,16 +38,19 @@
   <div class="chart-container">
     <canvas id="line-chartcanvas"></canvas>
   </div>
-
+   
   <!-- javascript -->
     <script src="jquery.min.js"></script>
     <script src="Chart.min.js"></script>
-    <script src="line-db-php.js"></script>
-
+    <?php $user = $_GET['user'];
+	if($user == 'amirah){
+	    <script src="line-db-php(amirah).js"></script>
+	}
+	else{
+	   <script src="line-db-php(guest).js"></script>
+	}
+   ?>
   <div class="performance-group-vertical">
-     <?php 
-		$user = $_GET['user'];
-     ?>
     <input type=button onClick="location.href='home.php?user=<?php echo $user?>'" class="performance" value="HOME">
   </div>
     
