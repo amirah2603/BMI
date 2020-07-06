@@ -11,9 +11,9 @@
 	<h1>Welcome Back, <?php echo $user ?>.</h1>
 
 	<div class="btn-group-vertical">
-    	<input type=button onClick="location.href='calculate.php?user=<?php echo user?>'" class="btn" value="CALCULATE BMI">
-    	<input type=button onClick="location.href='progress_update.html?user=<?php echo user?>'" class="btn" value="PERFORMANCE">
-    	<input type=button onClick="location.href='advice.php?user=<?php echo user?>'" class="btn" value="NUTRITIONAL ADVICE">
+    	<input type=submit onClick="location.href='calculate.php?user=<?php echo user?>'" class="btn" value="CALCULATE BMI">
+    	<input type=submit onClick="location.href='progress_update.html?user=<?php echo user?>'" class="btn" value="PERFORMANCE">
+    	<input type=submit onClick="location.href='advice.php?user=<?php echo user?>'" class="btn" value="NUTRITIONAL ADVICE">
 	</div>
 
 </body>
