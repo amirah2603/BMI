@@ -35,7 +35,7 @@ $query = sprintf("SELECT id, user_bmi, created_at FROM bmi ");
 
 //execute query
 // $result = $mysqli->query($query);
-print json_encode($rquery);
+print json_encode($query);
 // //loop through the returned data
 // $data = array();
 // foreach ($result as $row) {
