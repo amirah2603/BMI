@@ -5,7 +5,10 @@
 	<link rel="stylesheet" type="text/css" href="calculate.css">
 </head>
 <body>
-	<h2>Please stand on the device. </h2>
+	<?php 
+		$user = $_GET['user'];
+	 ?>
+	<h2>Please stand on the device, <?php echo $user ?>. </h2>
 	<h2>Click "CALCULATE" when ready.</h2>
 
 	<div class="calc-group-vertical">
