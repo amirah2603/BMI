@@ -28,10 +28,9 @@
 				$BMI = $lastValue['user_bmi'];
 // 				$BMI = 30;
 				echo "<h4>Your BMI is ".$BMI;
-				echo "You are doing great $user";
 
 				if ($BMI < 18.5){
-					echo ". You are Underweight.";
+					echo ". You are Underweight. You can do this, $user !";
 					echo "</h4>";
 					echo "</h2>";
 					echo "<ol>";
@@ -50,7 +49,7 @@
 					echo "</ol>";
 				}
 				else if(($BMI > 18.5) & ($BMI < 24.9)){
-					echo ". You are Normal.";
+					echo ". You are Normal. Good Job, $user !";
 					echo "</h4>";
 					echo "</h2>";
 					echo "<ol>";
@@ -63,7 +62,7 @@
 					echo "</ol>";
 				}
 				else if(($BMI > 25) & ($BMI < 29.9)){
-					echo ". You are Overweight.";
+					echo ". You are Overweight. Let's do this, $user !";
 					echo "</h4>";
 					echo "</h2>";
 					echo "<ol>";
@@ -76,7 +75,7 @@
 					echo "</ol>";
 				}
 				else{
-					echo ". You are Obese.";
+					echo ". You are Obese. Don't give up, $user !";
 					echo "</h4>";
 					echo "</h2>";
 					echo "<ol>";
