@@ -56,6 +56,6 @@ if ($result = mysqli_query($mysqli, "SELECT * FROM bmi")) {
 
 //now print the data
 // print json_encode($data);
-echo json_encode($data);
+// echo json_encode($data);
 
 ?>
