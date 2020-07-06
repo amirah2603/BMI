@@ -24,8 +24,6 @@ else{
   echo "Database is connected";
 }
 
-echo "Does not enter database";
-
 
 // $mysqli = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
@@ -34,22 +32,22 @@ echo "Does not enter database";
 // }
 
 // //query to get data from the table
-// $query = sprintf("SELECT id, user_bmi, created_at FROM bmi ");
+$query = sprintf("SELECT id, user_bmi, created_at FROM bmi ");
 
 // //execute query
-// $result = $mysqli->query($query);
+$result = $mysqli->query($query);
 
 // //loop through the returned data
 // $data = array();
 // foreach ($result as $row) {
 //   $data[] = $row;
 // }
-
+echo $result;
 // //free memory associated with result
-// $result->close();
+$result->close();
 
 // //close connection
-// $mysqli->close();
+$mysqli->close();
 
 // //now print the data
 // print json_encode($data);
@@ -70,7 +68,7 @@ echo "Does not enter database";
 // echo "result obtained"
 
 // $myJSON = json_encode($reult);
-// echo $myJSON;
+
 
 // //loop through the returned data
 // $data = array();
