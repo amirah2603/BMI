@@ -22,11 +22,11 @@ if(!$mysqli){
 }
 
 
-$mysqli = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+//$mysqli = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
-if(!$mysqli){
-  die("Connection failed: " . $mysqli->error);
-}
+// if(!$mysqli){
+//   die("Connection failed: " . $mysqli->error);
+// }
 
 // echo "Database connected";
 
