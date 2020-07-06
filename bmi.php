@@ -9,7 +9,7 @@ header("Access-Control-Allow-Origin: *");
 header('Content-Type: application/json');
 
 //database
-define('DB_HOST', '127.0.0.1');
+define('DB_HOST', '34.92.199.218');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', 'pQ1E5c4K2vRc');
 define('DB_NAME', 'tasks');
