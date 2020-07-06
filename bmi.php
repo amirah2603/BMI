@@ -28,7 +28,7 @@ if(!$mysqli){
   die("Connection failed: " . $mysqli->error);
 }
 
-echo "Database connected";
+// echo "Database connected";
 
 //query to get data from the table
 $query = sprintf("SELECT id, user_bmi, created_at FROM bmi ");
