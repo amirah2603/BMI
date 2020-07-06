@@ -34,8 +34,8 @@ echo "Database connected";
 $query = sprintf("SELECT id, user_bmi, created_at FROM bmi ");
 
 //execute query
-$result = $mysqli->query($query);
-
+// $result = $mysqli->query($query);
+print json_encode($rquery);
 // //loop through the returned data
 // $data = array();
 // foreach ($result as $row) {
@@ -49,6 +49,6 @@ $result = $mysqli->query($query);
 $mysqli->close();
 
 //now print the data
-print json_encode($result);
+
 
 ?>
