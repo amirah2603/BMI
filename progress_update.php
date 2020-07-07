@@ -40,9 +40,9 @@
   </div>
    
   <!-- javascript -->
-    <script type="text/javascript" src="jquery.min.js"></script>
+<!--     <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="Chart.min.js"></script>
-<!--     <?php $user = $_GET['user'];
+    <?php $user = $_GET['user'];
 	if($user == 'amirah'){
 	    <script type="text/javascript" src="line-db-php(amirah).js"></script>
 	}
