@@ -1,5 +1,0 @@
-# TypesConfig points to the file containing the list of mappings from
-# filename extension to MIME-type.
-   
-AddType application/x-httpd-php .html .htm
-AddType text/html .shtml
