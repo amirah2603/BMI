@@ -40,14 +40,14 @@
   </div>
    
   <!-- javascript -->
-    <script src="jquery.min.js"></script>
-    <script src="Chart.min.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="Chart.min.js"></script>
     <?php $user = $_GET['user'];
 	if($user == 'amirah){
-	    <script src="line-db-php(amirah).js"></script>
+	    <script type="text/javascript" src="line-db-php(amirah).js"></script>
 	}
 	else{
-	   <script src="line-db-php(guest).js"></script>
+	   <script type="text/javascript" src="line-db-php(guest).js"></script>
 	}
    ?>
   <div class="performance-group-vertical">
