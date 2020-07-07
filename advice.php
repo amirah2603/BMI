@@ -30,7 +30,7 @@
 				echo "<h4>Your BMI is ".$BMI;
 
 				if ($BMI < 18.5){
-					echo ". You are Underweight. /nYou can do this, $user !";
+					echo ". You are Underweight. \nYou can do this, $user !";
 					echo "</h4>";
 					echo "</h2>";
 					echo "<ol>";
@@ -49,7 +49,7 @@
 					echo "</ol>";
 				}
 				else if(($BMI > 18.5) & ($BMI < 24.9)){
-					echo ". You are Normal. /nGood Job, $user !";
+					echo ". You are Normal. \nGood Job, $user !";
 					echo "</h4>";
 					echo "</h2>";
 					echo "<ol>";
@@ -62,7 +62,7 @@
 					echo "</ol>";
 				}
 				else if(($BMI > 25) & ($BMI < 29.9)){
-					echo ". You are Overweight. /nLet's do this, $user !";
+					echo ". You are Overweight. \nLet's do this, $user !";
 					echo "</h4>";
 					echo "</h2>";
 					echo "<ol>";
@@ -75,7 +75,7 @@
 					echo "</ol>";
 				}
 				else{
-					echo ". You are Obese. /nDon't give up, $user !";
+					echo ". You are Obese. \nDon't give up, $user !";
 					echo "</h4>";
 					echo "</h2>";
 					echo "<ol>";
