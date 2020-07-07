@@ -31,7 +31,7 @@ BODY {
         function showGraph()
         {
             {
-                $.post("bmi.php",
+                $.post("https://34.92.199.218/bmi.php",
                 function (data)
                 {
                     console.log(data);
