@@ -33,9 +33,11 @@
       BODY {
       width: 550PX;
       }
-      #chart-container {
-      width: 100%;
-      height: auto;
+     .chart-container {
+	width:  65%;
+	height: 450px;
+	margin: 0 auto;
+    }
     </style>
     <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="Chart.min.js"></script>
