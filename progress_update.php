@@ -50,7 +50,7 @@
 <!--     <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="Chart.min.js"></script>
 -->
-   <script>
+   <script type="text/javascript">
    $(document).ready(function () {
         showGraph();
     });
@@ -89,7 +89,7 @@
            });
      }
  }
-       </script>
+  </script>
   <div class="performance-group-vertical">
     <input type=button onClick="location.href='home.php?user=<?php echo $user?>'" class="performance" value="HOME">
   </div>
