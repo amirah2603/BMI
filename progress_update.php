@@ -30,9 +30,6 @@
        h1 {
          text-align:center;
       }  
-      BODY {
-      width: 550PX;
-      }
      .chart-container {
 	width:  65%;
 	height: 450px;
