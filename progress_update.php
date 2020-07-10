@@ -49,8 +49,8 @@
   <!-- javascript -->
 <!--     <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="Chart.min.js"></script>
-
-   <script> -->
+-->
+   <script>
    $(document).ready(function () {
         showGraph();
     });
