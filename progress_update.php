@@ -45,8 +45,8 @@
     <canvas id="line-chartcanvas"></canvas>
   </div>   
 <?php 
-	$user = $_GET['user'];
-	if($user == "amirah"){
+// 	$user = $_GET['user'];
+	if(GET['user'] == "amirah"){
 		<script type="text/javascript">
   $(document).ready(function() {
   $.ajax({
