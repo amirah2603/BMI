@@ -51,44 +51,77 @@
     <script type="text/javascript" src="Chart.min.js"></script>
 -->
    <script type="text/javascript">
-   $(document).ready(function () {
-        showGraph();
-    });
-   function showGraph(){
-   {
-      $.post("https://34.92.199.218/bmi.php",
-      function (data)
-      {
-         console.log(data);
-             var name = [];
-             var marks = [];
-             for (var i in data) {
-                  name.push(data[i].created_at);
-                  marks.push(data[i].user_bmi);
-             }
+  $(document).ready(function() {
 
-             var chartdata = {
-                  labels: name,
-                  datasets: [
-                  {
-                        label: 'Time/Date Measured',
-                        backgroundColor: '#49e2ff',
-                        borderColor: '#46d5f1',
-                        hoverBackgroundColor: '#CCCCCC',
-                        hoverBorderColor: '#666666',
-                        data: marks
-                    }
-               ]
-              };
+  /**
+   * call the data.php file to fetch the result from db table.
+   */
+  $.ajax({
+    url : "https://34.92.199.218/bmi.php",
+    type : "GET",
+    success : function(data) {
+      console.log(data);
 
-             var graphTarget = $("#graphCanvas");
-             var lineGraph = new Chart(graphTarget, {
-                 type: 'line',
-                 data: chartdata
-             });
-           });
-     }
- }
+      // var score = {
+      //   TeamA : [],
+      //   TeamB : []
+      // };
+      var bmi = [];
+
+      var date = [];
+
+
+      var len = data.length;
+
+      for (var i = 0; i < len; i++){
+        bmi.push(data[i].user_bmi);
+        date.push(data[i].created_at);
+      }
+
+      console.log(bmi)
+      console.log(date)
+
+
+      var ctx = $("#line-chartcanvas");
+
+      var data = {
+        labels : date,
+        datasets : [
+          {
+            label : "Your BMI",
+            data : bmi,
+            backgroundColor : "blue",
+            borderColor : "lightblue",
+            fill : false,
+            LineTension : 0,
+            pointRadius : 5
+          },
+          // {
+          //   label : "TeamB score",
+          //   data : score.TeamB,
+          //   backgroundColor : "blue",
+          //   borderColor : "lightblue",
+          //   fill : false,
+          //   LineTension : 0,
+          //   pointRadius : 5
+          // }
+        ]
+      };
+
+      var chart = new Chart( ctx, {
+        type : "line",
+        data : data,
+        options : {}
+      });
+
+    },
+    error : function(data){
+      console.log(data);
+    }
+
+  });
+
+});
   </script>
   <div class="performance-group-vertical">
     <input type=button onClick="location.href='home.php?user=<?php echo $user?>'" class="performance" value="HOME">
