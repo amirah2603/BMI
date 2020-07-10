@@ -47,13 +47,14 @@
   </div>   
 <php? 
   $user = $_GET['user'];
+?>
   if($user == "amirah"){
       <script type="text/javascript" src="line-db-php.js(amirah)"></script>;
   }
   else{
 	<script type="text/javascript" src="line-db-php.js(guest)"></script>;
   }
-?> 
+ 
   <div class="performance-group-vertical">
     <input type=button onClick="location.href='home.php?user=<?php echo $user?>'" class="performance" value="HOME">
   </div>
