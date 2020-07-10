@@ -44,7 +44,7 @@
   <div class="chart-container">
     <canvas id="line-chartcanvas"></canvas>
   </div>   
-<script type="text/javascript" src="line-db-php.js"></script>
+<script type="text/javascript" src="line-db-php.js(amirah)"></script>
   <div class="performance-group-vertical">
     <input type=button onClick="location.href='home.php?user=<?php echo $user?>'" class="performance" value="HOME">
   </div>
