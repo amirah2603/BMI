@@ -82,8 +82,8 @@
               };
 
              var graphTarget = $("#graphCanvas");
-             var barGraph = new Chart(graphTarget, {
-                 type: 'bar',
+             var lineGraph = new Chart(graphTarget, {
+                 type: 'line',
                  data: chartdata
              });
            });
