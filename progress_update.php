@@ -45,9 +45,7 @@
   <div class="chart-container">
     <canvas id="line-chartcanvas"></canvas>
   </div>   
-<php? 
-  $user = $_GET['user'];
-?>
+<php? $user = $_GET['user']; ?>
   if($user == "amirah"){
       <script type="text/javascript" src="line-db-php.js(amirah)"></script>;
   }
