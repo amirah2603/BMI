@@ -4,7 +4,7 @@
 <!--     //<meta content="text/html;charset=utf-8" http-equiv="Content-Type"> 
     //<meta content="utf-8" http-equiv="encoding">  -->
     <title>Performance</title>
-<!--     <link href="default.css" rel="stylesheet"> -->
+    <link href="default.css" rel="stylesheet">
     <style type="text/css">
       .performance {
         color: #ffffff;
@@ -29,11 +29,11 @@
        h1 {
          text-align:center;
       }  
-     .chart-container {
+/*      .chart-container {
 	width:  65%;
 	height: 450px;
 	margin: 0 auto;
-    }
+    } */
     </style>
     <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="Chart.min.js"></script>
@@ -44,9 +44,18 @@
   <div class="chart-container">
     <canvas id="line-chartcanvas"></canvas>
   </div>   
-<script type="text/javascript" src="line-db-php(amirah).js"></script>
+	<?php 
+		$user = $_GET['user']; 
+		if($user == "amirah"){
+			echo '<script type="text/javascript" src="line-db-php(amirah).js">','','</script>';
+		}
+		else{
+			echo '<script type="text/javascript" src="line-db-php(guest).js">','','</script>';
+		}
+	?>
+<!-- 	<script type="text/javascript" src="line-db-php(amirah).js"></script> -->
   <div class="performance-group-vertical">
-    <input type=button onClick="location.href='home.php?user=<?php echo $user?>'" class="performance" value="HOME">
+  	<input type=button onClick="location.href='home.php?user=<?php echo $user?>'" class="performance" value="HOME">
   </div>
     
 </body>
