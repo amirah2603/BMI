@@ -53,7 +53,7 @@
   else{
 	<script type="text/javascript" src="line-db-php.js(guest)"></script>;
   }
-  ?> 
+?> 
   <div class="performance-group-vertical">
     <input type=button onClick="location.href='home.php?user=<?php echo $user?>'" class="performance" value="HOME">
   </div>
