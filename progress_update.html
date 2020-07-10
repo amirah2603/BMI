@@ -39,7 +39,7 @@
     <canvas id="line-chartcanvas"></canvas>
   </div>   
   <!-- javascript -->
-    <script type="text/javascript" src="jquery.min.js"></script>
+<!--     <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="Chart.min.js"></script>
     <?php $user = $_GET['user'];
 	if($user == 'amirah'){
@@ -48,7 +48,47 @@
 	else{
 	   <script type="text/javascript" src="line-db-php(guest).js"></script>
 	}
-   ?> 
+   ?>  -->
+   <script>
+   $(document).ready(function () {
+        showGraph();
+    });
+   function showGraph(){
+   {
+      $.post("https://34.92.199.218/bmi.php",
+      function (data)
+      {
+         console.log(data);
+             var name = [];
+             var marks = [];
+             for (var i in data) {
+                  name.push(data[i].created_at);
+                  marks.push(data[i].user_bmi);
+             }
+
+             var chartdata = {
+                  labels: name,
+                  datasets: [
+                  {
+                        label: 'Time/Date Measured',
+                        backgroundColor: '#49e2ff',
+                        borderColor: '#46d5f1',
+                        hoverBackgroundColor: '#CCCCCC',
+                        hoverBorderColor: '#666666',
+                        data: marks
+                    }
+               ]
+              };
+
+             var graphTarget = $("#graphCanvas");
+             var barGraph = new Chart(graphTarget, {
+                 type: 'bar',
+                 data: chartdata
+             });
+           });
+     }
+ }
+       </script>
   <div class="performance-group-vertical">
     <input type=button onClick="location.href='home.php?user=<?php echo $user?>'" class="performance" value="HOME">
   </div>
