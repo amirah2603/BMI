@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"> -->
-    <meta content="utf-8" http-equiv="encoding"> -->
+<!--     //<meta content="text/html;charset=utf-8" http-equiv="Content-Type"> 
+    //<meta content="utf-8" http-equiv="encoding">  -->
     <title>Performance</title>
-    <link href="default.css" rel="stylesheet">
-    <style>
+<!--     <link href="default.css" rel="stylesheet"> -->
+    <style type="text/css">
       .performance {
         color: #ffffff;
         background-color: #f9c230;
