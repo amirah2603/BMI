@@ -12,7 +12,7 @@
 
 	<div class="btn-group-vertical">
     	<input type=submit onClick="location.href='calculate.php?user=<?php echo $user?>'" class="btn" value="CALCULATE BMI">
-    	<input type=submit onClick="location.href='progress_update.php?user=<?php echo $user?>'" class="btn" value="PERFORMANCE">
+    	<input type=submit onClick="location.href='progress_update.html?user=<?php echo $user?>'" class="btn" value="PERFORMANCE">
     	<input type=submit onClick="location.href='advice.php?user=<?php echo $user?>'" class="btn" value="NUTRITIONAL ADVICE">
 	</div>
 
