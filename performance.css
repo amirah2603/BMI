@@ -1,11 +1,23 @@
-
-h1 {
-	text-align:center;
+html { 
+    font-family: Helvetica; 
+    display: inline-block; 
+    margin: 0px auto; 
+    text-align: center;
 }
 
+body{
+    margin-top: 50px;
+}
+
+h1{
+    color: #444444;
+    margin: 50px auto 30px;
+}
 .home-group-vertical {
-    display: inline-flex;
-    flex-direction: column;
+/*     display: inline-flex;
+    flex-direction: column; */
+    display: inline-flex; 
+    flex-direction: column; 
 }
 
 .home {
@@ -16,10 +28,10 @@ h1 {
     font-size: 20px;
     border-radius: 12px;
     transition: .15s ease-in-out;
-   	margin-left: 600px;
     margin-bottom: 10px;
     padding: 14px 40px;
 }
+
 
 .home:hover {
     background-color: #0069d9;
