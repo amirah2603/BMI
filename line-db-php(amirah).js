@@ -22,7 +22,7 @@ $(document).ready(function() {
 
       for (var i = 0; i < len; i++){
         bmi.push(data[i].user_bmi);
-        date.push(data[i].created_at);
+        date.push(data[i].DATE(created_at));
       }
 
       console.log(bmi)
