@@ -19,8 +19,8 @@ h4{
 }
 
 ol {
-   font-size: 14px;
-   color: #888;
+   font-size: 16px;
+   color: #444444;
    margin-bottom: 10px;
 }
 
@@ -51,6 +51,7 @@ ol {
     border-radius: 12px;
     transition: .15s ease-in-out;
     margin-bottom: 10px;
+    margin-left:-100;
     padding: 14px 40px;
 }
 .advice:hover {
