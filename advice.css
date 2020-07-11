@@ -35,7 +35,7 @@ ol {
 }
 
 .image {
-    margin-left: 100px;
+    margin-left: 50px;
     margin-bottom: 70px;
     padding: 14px 40px;
     height: 300px;
@@ -51,7 +51,7 @@ ol {
     border-radius: 12px;
     transition: .15s ease-in-out;
     margin-bottom: 10px;
-    margin-left: 225px;
+    margin-left: 125px;
     padding: 14px 40px;
 }
 .advice:hover {
