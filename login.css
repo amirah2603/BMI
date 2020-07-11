@@ -13,8 +13,11 @@ h1{
     margin: 50px auto 30px;
 }
 .btn-group-vertical {
-    display: inline-flex;
-    flex-direction: column;
+/*     display: inline-flex;
+    flex-direction: column; */
+    display: inline-flex; 
+    flex-direction: column; 
+    margin-left: -550px;
 }
 
 .btn {
