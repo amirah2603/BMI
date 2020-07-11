@@ -1,12 +1,20 @@
+html { 
+    font-family: Helvetica; 
+    display: inline-block; 
+    margin: 0px auto; 
+    text-align: center;
+}
+
+body{
+    margin-top: 50px;
+}
 
 h1{
-    margin-left: 550px;
-    margin-bottom: 10px;
+    margin: 50px auto 30px;
 }
 .btn-group-vertical {
     display: inline-flex;
     flex-direction: column;
-    
 }
 
 .btn {
