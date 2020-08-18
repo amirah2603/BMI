@@ -22,16 +22,16 @@
   		<div class="col my-col">
   			<div class="centered">
   				<?php
-// 				if (user=="amirah"){
-// 					$url = "http://34.92.199.218/bmi.php";
-// 				}
-// 				else{
-// 					$url = "http://34.92.199.218/bmi_guest.php";
-// 				}
-//     				$json = json_decode(file_get_contents($url), true);
-// 				$lastValue = end($json);
-// 				$BMI = $lastValue['user_bmi'];
-				$BMI = 25;
+				if (user=="amirah"){
+					$url = "http://34.92.199.218/bmi.php";
+				}
+				else{
+					$url = "http://34.92.199.218/bmi_guest.php";
+				}
+    				$json = json_decode(file_get_contents($url), true);
+				$lastValue = end($json);
+				$BMI = $lastValue['user_bmi'];
+// 				$BMI = 25;
 				echo "<h4>Your BMI is ".$BMI;
 
 				if ($BMI < 18.5){
