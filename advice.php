@@ -66,7 +66,7 @@
 					echo "<li>Eat more vegetables and fruits</li>";
 					echo "</ol>";
 				}
-				else if(($BMI > 25) & ($BMI < 29.9)){
+				else if(($BMI > 24.9) & ($BMI < 29.9)){
 					echo ". You are Overweight. \nLet's do this, $user !";
 					echo "</h4>";
 					echo "</h2>";
