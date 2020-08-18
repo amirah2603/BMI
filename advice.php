@@ -31,7 +31,7 @@
 //     				$json = json_decode(file_get_contents($url), true);
 // 				$lastValue = end($json);
 // 				$BMI = $lastValue['user_bmi'];
-				$BMI = 18;
+				$BMI = 30;
 				echo "<h4>Your BMI is ".$BMI;
 
 				if ($BMI < 18.5){
