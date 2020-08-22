@@ -23,10 +23,10 @@
   			<div class="centered">
   				<?php
 				if (user=="guest"){
-					$url = "http://34.92.199.218/bmi.php";
+					$url = "http://34.92.199.218/bmi_guest.php";
 				}
 				else{
-					$url = "http://34.92.199.218/bmi_guest.php";
+					$url = "http://34.92.199.218/bmi.php";
 				}
     				$json = json_decode(file_get_contents($url), true);
 				$lastValue = end($json);
