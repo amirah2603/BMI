@@ -22,7 +22,7 @@
   		<div class="col my-col">
   			<div class="centered">
   				<?php
-				if (user=="guest"){
+				if ($user=="guest"){
 					$url = "http://34.92.199.218/bmi_guest.php";
 				}
 				else{
